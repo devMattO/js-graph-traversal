@@ -48,10 +48,10 @@ Is represented in memory as:
 ## Graph Methods
 The basic operations provided by a graph data structure usually include:
 
-1. `adjacent(x, y)`: tests whether there is an edge from the vertices x to y;
-1. `neighbors(x, y)`: lists all vertices such that there is an edge from the vertices x to y;
-1. `neighbors(node, [x, y, z ...])`: adds an array of nodes x, y, z to `node`.
-1. [Optional] `remove_vertex(x)`: removes the vertex x, if it is there;
+1. Define a `Node` class that has a `name {{string}}`, `value{{*}}`, and `neighbors{{array}}`
+1. `Node.addNeighbors([x {{node}}, y {{node}}, z {{node}} ...])`: adds an array of nodes x, y, z to `node`.
+1. `Node.neighbors(x {{node}})`: lists all vertices such that there is an edge from the vertices x to y.
+1. [Optional] `Node.removeNode(x {{node}})`: removes the vertex x, if it is there.
 
 ## Depth-first Search Methods
 The basic operations provided by a Depth-first Search usually include:
