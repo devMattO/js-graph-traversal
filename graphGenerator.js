@@ -10,7 +10,6 @@ function Node(name,value){
     arr.forEach(function(el){
         that.adjacentNeighbors.push(el);
     });
-    console.log(that.adjacentNeighbors);
   };
 
   this.adjacent = function(y){
